@@ -1,5 +1,6 @@
 # Zwave-API-Csharp
-Zwave API for c# using the latest specification
+Zwave API for c# using the latest specification.
+Original code ported from http://zwaveapi.codeplex.com/
 
 # General Information
 http://www.z-wave.com/ 
