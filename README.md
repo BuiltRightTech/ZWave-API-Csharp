@@ -1,6 +1,12 @@
 # Zwave-API-Csharp
-Zwave API for c# using the latest specification.
+Zwave API for c# using the latest ZWave Public specification.
 Original code ported from http://zwaveapi.codeplex.com/
+
+RoadMAp
+1. Clean up all code and upgrade to Net 4.6
+2. Make it a standalone class library
+3. Build WPF, UWP and WCF samples.
+4. More...
 
 # General Information
 http://www.z-wave.com/ 
