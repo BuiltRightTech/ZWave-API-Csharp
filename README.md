@@ -1,6 +1,6 @@
 
-# Zwave-API-Csharp
-Zwave API for c# using the latest ZWave Public specification.
+# ZWave-API-Csharp
+ZWave API for c# using the latest ZWave Public specification.
 
 # RoadMap
 1. Clean up all code and upgrade to Net 4.6
