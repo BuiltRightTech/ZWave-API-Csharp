@@ -1,4 +1,3 @@
-
 # ZWave-API-Csharp
 ZWave API for c# using the latest ZWave Public specification.
 
@@ -9,7 +8,9 @@ ZWave API for c# using the latest ZWave Public specification.
 4. More...
 
 # General Information
+
 http://www.z-wave.com/ 
+
 http://en.wikipedia.org/wiki/Z-Wave
 
 # Z Wave Public Specification
