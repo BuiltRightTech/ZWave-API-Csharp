@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ZWaveAPI
+namespace ZWaveAPI.Roles
 {
-    class Controller
+    class Slave
     {
     }
 }

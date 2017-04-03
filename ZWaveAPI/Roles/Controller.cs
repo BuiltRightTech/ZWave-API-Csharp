@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ZWaveAPI.CommandClasses.General
+namespace ZWaveAPI.Roles
 {
-    class NetworkManagementPrimary
+    class Controller
     {
     }
 }

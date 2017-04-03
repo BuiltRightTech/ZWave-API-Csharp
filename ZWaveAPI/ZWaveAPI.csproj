@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EC0A01AC-4CE1-4176-B256-B4AEBE0C7809}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZWaveAPI</RootNamespace>
+    <AssemblyName>ZWaveAPI</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>packages\NLog.4.4.5\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommandClasses\Device\AlarmSensor.cs" />
+    <Compile Include="CommandClasses\Device\AlarmSilence.cs" />
+    <Compile Include="CommandClasses\Device\AllSwitch.cs" />
+    <Compile Include="CommandClasses\Device\BarrierOperator.cs" />
+    <Compile Include="CommandClasses\Device\Basic.cs" />
+    <Compile Include="CommandClasses\Device\BasicTariffInformation.cs" />
+    <Compile Include="CommandClasses\Device\BasicWindowCovering.cs" />
+    <Compile Include="CommandClasses\Device\BinarySensor.cs" />
+    <Compile Include="CommandClasses\Device\BinaryToggleSwitch.cs" />
+    <Compile Include="CommandClasses\Device\ClimateControlSchedule.cs" />
+    <Compile Include="CommandClasses\Device\ColorSwitch.cs" />
+    <Compile Include="CommandClasses\Device\DCPListConfiguration.cs" />
+    <Compile Include="CommandClasses\Device\DCPListMonitoring.cs" />
+    <Compile Include="CommandClasses\Device\DoorLock.cs" />
+    <Compile Include="CommandClasses\Device\DoorLockLogging.cs" />
+    <Compile Include="CommandClasses\Device\EnergyProduction.cs" />
+    <Compile Include="CommandClasses\Device\EntryControl.cs" />
+    <Compile Include="CommandClasses\Device\HRVControl.cs" />
+    <Compile Include="CommandClasses\Device\HRVStatus.cs" />
+    <Compile Include="CommandClasses\Device\HumidityControlMode.cs" />
+    <Compile Include="CommandClasses\Device\HumidityControlSetpoint.cs" />
+    <Compile Include="CommandClasses\Device\HumudutyControlOperatingState.cs" />
+    <Compile Include="CommandClasses\Device\Irrigation.cs" />
+    <Compile Include="CommandClasses\Device\Lock.cs" />
+    <Compile Include="CommandClasses\Device\Meter.cs" />
+    <Compile Include="CommandClasses\Device\MeterTableConfiguration.cs" />
+    <Compile Include="CommandClasses\Device\MeterTableMonitor.cs" />
+    <Compile Include="CommandClasses\Device\MeterTablePushConfiguration.cs" />
+    <Compile Include="CommandClasses\Device\MoveToPositionWindowCovering.cs" />
+    <Compile Include="CommandClasses\Device\MultilevelSensor.cs" />
+    <Compile Include="CommandClasses\Device\MultilevelSwitch.cs" />
+    <Compile Include="CommandClasses\Device\MultilevelToggleSwitch.cs" />
+    <Compile Include="CommandClasses\Device\PowerLevel.cs" />
+    <Compile Include="CommandClasses\Device\Prepayment.cs" />
+    <Compile Include="CommandClasses\Device\PrepaymentEncapsulation.cs" />
+    <Compile Include="CommandClasses\Device\Protection.cs" />
+    <Compile Include="CommandClasses\Device\PulseMeter.cs" />
+    <Compile Include="CommandClasses\Device\RateTableConfiguration.cs" />
+    <Compile Include="CommandClasses\Device\RateTableMonitoring.cs" />
+    <Compile Include="CommandClasses\Device\SceneActivation.cs" />
+    <Compile Include="CommandClasses\Device\SceneActuatorConfiguration.cs" />
+    <Compile Include="CommandClasses\Device\SceneControllerConfiguration.cs" />
+    <Compile Include="CommandClasses\Device\ScheduleEntryLock.cs" />
+    <Compile Include="CommandClasses\Device\SensorConfiguration.cs" />
+    <Compile Include="CommandClasses\Device\SimpleAVControl.cs" />
+    <Compile Include="CommandClasses\Device\TariffTableConfiguration.cs" />
+    <Compile Include="CommandClasses\Device\TariffTableMonitor.cs" />
+    <Compile Include="CommandClasses\Device\ThermostatFanMode.cs" />
+    <Compile Include="CommandClasses\Device\ThermostatFanState.cs" />
+    <Compile Include="CommandClasses\Device\ThermostatMode.cs" />
+    <Compile Include="CommandClasses\Device\ThermostatOperatingState.cs" />
+    <Compile Include="CommandClasses\Device\ThermostatSetback.cs" />
+    <Compile Include="CommandClasses\Device\ThermostatSetpoint.cs" />
+    <Compile Include="CommandClasses\Device\WindowCovering.cs" />
+    <Compile Include="CommandClasses\General\Alarm.cs" />
+    <Compile Include="CommandClasses\General\AntiTheft.cs" />
+    <Compile Include="CommandClasses\General\ApplicationCapacility.cs" />
+    <Compile Include="CommandClasses\General\ApplicationStatus.cs" />
+    <Compile Include="CommandClasses\General\Association.cs" />
+    <Compile Include="CommandClasses\General\AssociationCommandConfiguration.cs" />
+    <Compile Include="CommandClasses\General\AssociationGroupInformation.cs" />
+    <Compile Include="CommandClasses\General\Battery.cs" />
+    <Compile Include="CommandClasses\General\CentralScene.cs" />
+    <Compile Include="CommandClasses\General\Clock.cs" />
+    <Compile Include="CommandClasses\General\Configuration.cs" />
+    <Compile Include="CommandClasses\General\ControllerReplication.cs" />
+    <Compile Include="CommandClasses\General\CRC16Encapsulation.cs" />
+    <Compile Include="CommandClasses\General\DeviceResetLocally.cs" />
+    <Compile Include="CommandClasses\General\FirmwareUpdateMetaData.cs" />
+    <Compile Include="CommandClasses\General\GeographicLocation.cs" />
+    <Compile Include="CommandClasses\General\GroupingName.cs" />
+    <Compile Include="CommandClasses\General\Hail.cs" />
+    <Compile Include="CommandClasses\General\Indicator.cs" />
+    <Compile Include="CommandClasses\General\IPAssociation.cs" />
+    <Compile Include="CommandClasses\General\IPConfiguration.cs" />
+    <Compile Include="CommandClasses\General\Language.cs" />
+    <Compile Include="CommandClasses\General\Mailbox.cs" />
+    <Compile Include="CommandClasses\General\ManufacturerProprietary.cs" />
+    <Compile Include="CommandClasses\General\ManufacturerSpecific.cs" />
+    <Compile Include="CommandClasses\General\Mark.cs" />
+    <Compile Include="CommandClasses\General\MultiChannel.cs" />
+    <Compile Include="CommandClasses\General\MultiChannelAssociation.cs" />
+    <Compile Include="CommandClasses\General\MultiCommand.cs" />
+    <Compile Include="CommandClasses\General\NetworkManagementBasicNode.cs" />
+    <Compile Include="CommandClasses\General\NetworkManagementInclusion.cs" />
+    <Compile Include="CommandClasses\General\NetworkManagementPrimary.cs" />
+    <Compile Include="CommandClasses\General\NetworkManagementProxy.cs" />
+    <Compile Include="CommandClasses\General\NodeNamingAndLocation.cs" />
+    <Compile Include="CommandClasses\General\NonInteroperable.cs" />
+    <Compile Include="CommandClasses\General\NoOperation.cs" />
+    <Compile Include="CommandClasses\General\Notification.cs" />
+    <Compile Include="CommandClasses\General\Proprietary.cs" />
+    <Compile Include="CommandClasses\General\RemoteAssociation.cs" />
+    <Compile Include="CommandClasses\General\RemoteAssociationActivate.cs" />
+    <Compile Include="CommandClasses\General\Schedule.cs" />
+    <Compile Include="CommandClasses\General\ScreenAttributes.cs" />
+    <Compile Include="CommandClasses\General\ScreenMetaData.cs" />
+    <Compile Include="CommandClasses\General\Security.cs" />
+    <Compile Include="CommandClasses\General\SecurityScheme0Mark.cs" />
+    <Compile Include="CommandClasses\General\Supervision.cs" />
+    <Compile Include="CommandClasses\General\Time.cs" />
+    <Compile Include="CommandClasses\General\TimeParameters.cs" />
+    <Compile Include="CommandClasses\General\TransportService.cs" />
+    <Compile Include="CommandClasses\General\UserCode.cs" />
+    <Compile Include="CommandClasses\General\Version.cs" />
+    <Compile Include="CommandClasses\General\WakeUp.cs" />
+    <Compile Include="CommandClasses\General\ZWaveIP.cs" />
+    <Compile Include="CommandClasses\General\ZWaveIP6LoWPAN.cs" />
+    <Compile Include="CommandClasses\General\ZWaveIPGateway.cs" />
+    <Compile Include="CommandClasses\General\ZWaveIPNamingAndLocation.cs" />
+    <Compile Include="CommandClasses\General\ZWaveIPND.cs" />
+    <Compile Include="CommandClasses\General\ZWaveIPPortal.cs" />
+    <Compile Include="CommandClasses\General\ZWavePlusInfo.cs" />
+    <Compile Include="Controller.cs" />
+    <Compile Include="Enum\ApplicationUpdate.cs" />
+    <Compile Include="Enum\CommandClasses.cs" />
+    <Compile Include="Enum\FrameHeader.cs" />
+    <Compile Include="Enum\Function.cs" />
+    <Compile Include="Enum\MessageType.cs" />
+    <Compile Include="Enum\TransmitOptions.cs" />
+    <Compile Include="Info.cs" />
+    <Compile Include="IP.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="Message\Message.cs" />
+    <Compile Include="Node.cs" />
+    <Compile Include="ZWPort.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Roles\Controller.cs" />
+    <Compile Include="Roles\Slave.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Icons\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
